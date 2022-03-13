@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/aws
+    username: sa
+    password:
+      dirver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        #        show_sql: false
+        format_sql: true
+        default_batch_fatch_size: 100
+
+logging:
+  level:
+    org.hibernate.SQL: debug

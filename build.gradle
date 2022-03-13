@@ -24,13 +24,12 @@ repositories {
 }
 
 dependencies {
-//    compile('org.springframework.boot:spring-boot-starter-data-jpa')
-//    compile('org.hibernate:hibernate-java8')
-//    compile('org.springframework.boot:spring-boot-starter-web')
     implementation 'org.springframework.boot:spring-boot-starter-web'
-//    runtime('com.h2database:h2')
-//    testCompile('org.junit.jupiter:junit-jupiter:5.6.0')
-//    testCompile('org.assertj:assertj-core:3.15.0')
+    implementation 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.h2database:h2'
+    implementation 'org.apache.httpcomponents:httpclient:4.5'
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
